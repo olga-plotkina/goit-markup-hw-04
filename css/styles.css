@@ -316,7 +316,7 @@ body {
   margin-bottom: 16px;
 
 }
-.action-item {
+.action-item + .action-item {
   margin-left: 10px;
 }
 .social {
@@ -347,17 +347,26 @@ body {
 
 .client-link {
   display: inline-block;
+  width: 170px;
+  height: 92px;
+  color: var(--primary-icon-color);
 
-  padding: 16px 32px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   cursor: pointer;
+}
+.client-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients .item + .item {
   margin-left: 30px;
 }
 .client-icon {
-  fill: var(--primary-icon-color);
+  width: 170px;
+  height: 92px;
+  fill: currentColor;
+  
 }
 
 /* button */
@@ -511,6 +520,32 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background)
+}
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+.join-to-us {
+  padding-top: 10px;
+  margin-left: 70px;
+}
+.join {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  line-height: 1.1721;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social {
+  display: flex;
+  margin-top: 20px;
+}
+.join-to-us .social {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+.join-to-us .social:hover {
+  background-color: var(--accent-color);
 }
 
 .footer .logo {
